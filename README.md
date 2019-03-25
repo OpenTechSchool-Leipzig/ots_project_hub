@@ -1,5 +1,9 @@
 # OTS Project Hub
 
+## Follow Development
+
+To see the live version go to <https://ots-projects-15deb.firebaseapp.com/>
+
 ## Instructions
 
 ```bash
