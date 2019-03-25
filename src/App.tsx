@@ -1,19 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from '@emotion/styled';
+import 'nes.css/css/nes.css';
+
+const Container = styled.div`
+  padding: 30px;
+`;
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-      <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
-    </header>
-  </div>
+  <Container>
+    <div className="nes-container with-title">
+      <p className="title">OTS Project Hub</p>
+      <p>Test paragraph</p>
+      <button type="button" className="nes-btn is-success">
+        Test Button
+      </button>
+    </div>
+  </Container>
 );
 
 export default App;
