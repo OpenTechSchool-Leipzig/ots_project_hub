@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { RouteComponentProps } from '@reach/router';
 
 import ProjectContainer from './ProjectContainer';
 
@@ -7,10 +8,10 @@ const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
+  padding: 0 20px;
 `;
 
-const ProjectGrid = () => (
+const ProjectGrid = (props: RouteComponentProps) => (
   <StyledGrid>
     <ProjectContainer name={'Project1'} description={'Hello from Project1'} />
     <ProjectContainer name={'Project2'} description={'Hello from Project2'} />
